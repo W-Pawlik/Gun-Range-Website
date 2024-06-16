@@ -1,0 +1,32 @@
+@import '../abstracts/variables';
+
+.home{
+    background-image: url('/resources/images/image-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 87vh;
+    width: 100%;
+    
+
+    .home-title{
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+        color: $title-text-color;
+        margin-top: 0.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-btn{
+        cursor: pointer;
+        padding: 1.1rem;
+        color: $btn-text-color;
+        font-weight: 600;
+
+        &:active{
+            background-color: $btn-active-color;
+        }
+    }
+}
