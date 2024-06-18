@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as colors;
+@use "../base/typography" as fonts;
+
+.plans-section {
+  padding: 4rem 2rem;
+
+  .section-title {
+    margin-bottom: 6rem;
+  }
+
+  .plans-container {
+    gap: 0;
+
+    .plan-card {
+      border: 2px solid colors.$h2-title-color;
+      padding: 2rem;
+      max-width: 20rem;
+      text-align: center;
+      height: 26rem;
+      background-color: #887353;
+      border-radius: 8px;
+
+      .plan-title {
+        font-size: fonts.$subtitle-size;
+      }
+
+      .plan-list {
+        list-style: none;
+        margin-top: 1rem;
+        font-size: fonts.$main-text-size;
+        line-height: 2;
+        font-weight: 500;
+      }
+    }
+
+    .plan-card:nth-child(2) {
+      transform: translateY(-2rem);
+      scale: (1.1);
+      background-color: #ddc673;
+    }
+  }
+}
