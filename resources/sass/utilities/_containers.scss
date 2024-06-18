@@ -1,6 +1,6 @@
 
 .container {
-    padding: 5rem 3.5rem;
+    padding: 1rem 4.5rem;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -13,10 +13,31 @@
     gap: 1rem;
 }
 
-.grid-2-cols-2rows {
+.flex-row-center-h-v {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.grid-2-cols-2-rows {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:  repeat(2, 1fr);
     gap: 1rem;
+}
 
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.grid-center-h {
+    justify-items: center;
+}
+
+.grid-center-v {
+    align-items: center;
 }

@@ -1,0 +1,7 @@
+@use '../base/' as fonts;
+
+.section-title{
+    font-size: fonts.$section-title-size;
+    text-align: center;
+    margin-bottom: 2rem;
+}
