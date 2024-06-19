@@ -55,18 +55,20 @@
     </header>
     <main>
       <section class="home">
-        <div class="container flex-col-center-h-v">
-          <h1 class="home-title">Odkryj ze mną swoją nową pasję!</h1>
-          <span class="btn home-btn">Zacznij już teraz</span>
+        <div class="container grid-2-cols">
+          <div class="title-container">
+            <h1 class="home-title">Odkryj ze mną swoją nową pasję!</h1>
+            <span class="btn home-btn">Zacznij już teraz</span>
+          </div>
         </div>
       </section>
 
       <section class="about-me-section">
         <div class="container grid-2-cols-2-rows grid-center-h">
           <div class="about-me-content flex-col-center-h-v">
-            <h2 class="about-title">about.</h2>
+            <h2 class="about-title">o mnie</h2>
             <h1 class="short-desc-about">
-              short description of Tomek Florkiweicz
+              Hej, nazywam się Tomek i chcę pokazać ci swoją pasję!
             </h1>
             <p class="description-about">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -79,7 +81,7 @@
             </p>
           </div>
           <img
-            src="./resources/images/header-logo.png"
+            src="./resources/images/about-img.png"
             alt=""
             class="about-me-img"
           />
@@ -115,7 +117,7 @@
 
       <section class="steps-section">
         <div class="container">
-          <h2 class="section-title">How to start your journey?</h2>
+          <h2 class="section-title">Jak zacząć przygodę ze strzelaniem?</h2>
         </div>
         <div class="container grid-3-cols grid-center-h">
           <div class="step-card flex-col-center-h-v">
@@ -178,6 +180,7 @@
         <div class="container flex-row-center-h-v plans-container">
           <div class="plan-card">
             <h2 class="plan-title">Indywidualny</h2>
+            <h1 class="price">99<span class="price-span">zł</span></h1>
             <ul class="plan-list">
               <li>Trening 1 na 1</li>
               <li>Cena za 1 godzinę</li>
@@ -187,6 +190,7 @@
           </div>
           <div class="plan-card">
             <h2 class="plan-title">Karnet</h2>
+            <h1 class="price">320<span class="price-span">zł/mies</span></h1>
             <ul class="plan-list">
               <li>Trening indywidualny</li>
               <li>4 wejścia w miesiącu</li>
@@ -196,11 +200,53 @@
           </div>
           <div class="plan-card">
             <h2 class="plan-title">Grupowy</h2>
+            <h1 class="price">300<span class="price-span">zł</span></h1>
             <ul class="plan-list">
               <li>Trening grupwy</li>
               <li>Maksymalnie 4 osoby</li>
               <li>Idealne na imprezy</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gun-range-info-section">
+        <div class="container flex-col-center-h-v">
+          <h2 class="section-title">Nasza Strzelnica</h2>
+          <h3 class="section-subtitle">Tutaj zacznisz swoją przygodę!</h3>
+          <p class="gun-range-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            varius nisl et orci vulputate feugiat. Morbi tempus purus nulla, eu
+            vehicula ipsum vehicula in. Nullam mattis faucibus turpis, quis
+            auctor nisi laoreet eget. Aliquam ullamcorper bibendum aliquet.
+            Phasellus lacinia nibh eu vulputate finibus.
+          </p>
+          <div class="slider">
+            <ul class="slides">
+              <li class="slide" data-active>
+                <img
+              src="./resources/images/slider-img.jfif"
+              alt=""
+              class="slide-img"
+            />
+              </li>
+              <li class="slide">
+                <img
+              src="./resources/images/slider-img.jfif"
+              alt=""
+              class="slide-img"
+            />
+              </li>
+              <li class="slide">
+                <img
+              src="./resources/images/slider-img.jfif"
+              alt=""
+              class="slide-img"
+            />
+              </li>
+            </ul>
+            <button class="btn-prev" onclick="switchToPrevSlide()">&#10094</button>
+            <button class="btn-next" onclick="switchToNextSlide()">&#10095</button>
           </div>
         </div>
       </section>

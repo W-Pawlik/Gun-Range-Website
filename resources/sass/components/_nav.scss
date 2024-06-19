@@ -1,29 +1,43 @@
-@import '../base/typography';
-@import '../abstracts/variables';
+@import "../base/typography";
+@import "../abstracts/variables";
 
 .nav-items {
-    display: flex;
-    flex-direction: row;
-    gap: 1.2rem;
-    list-style: none;
-    font-size: $nav-font-size;
-    padding: 0 1.2rem 0.3rem 1.2rem;
-    border-bottom: 2px solid #6d6454;
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  list-style: none;
+  font-size: $nav-font-size;
 
-    .nav-link {
-        color: $main-text-color;
-        font-weight: $nav-font-weight;
+  .nav-link {
+    color: $main-text-color;
+    font-weight: $nav-font-weight;
+    position: relative;
 
-        &:hover{
-            color: #6d6454;
-        }
-
-        &:active {
-            color: $btn-active-color;
-        }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: $main-text-color;
+      transition: width 0.2s ease;
+      -webkit-transition: width 0.2s ease;
     }
 
-    .btn{
-        color: $btn-text-color;
+    &:hover::after {
+      width: 100%;
+      left: 0;
+      background: $main-text-color;
     }
+
+    &:active {
+      color: $btn-active-color;
+    }
+  }
+
+  .btn {
+    color: $btn-text-color;
+  }
 }

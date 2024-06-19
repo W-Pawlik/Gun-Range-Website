@@ -22,6 +22,16 @@
 
       .plan-title {
         font-size: fonts.$subtitle-size;
+        margin-bottom: 1rem;
+      }
+
+      .price-span {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .price {
+        font-size: 4rem;
       }
 
       .plan-list {

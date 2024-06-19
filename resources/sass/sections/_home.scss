@@ -1,32 +1,38 @@
-@import '../abstracts/variables';
+@import "../abstracts/variables";
 
-.home{
-    background-image: url('/resources/images/image-background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    height: 87vh;
-    width: 100%;
-    
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/resources/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  height: 90vh;
+  width: 100%;
 
-    .home-title{
-        font-size: 4rem;
-        letter-spacing: 0.2rem;
-        color: $title-text-color;
-        margin-top: 0.2rem;
-        margin-bottom: 2rem;
+  .title-container {
+    grid-column: 2;
+    align-self: center;
+    margin-bottom: 10rem;
+  }
+
+  .home-title {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: rgb(240, 239, 224);
+    margin-top: 0.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .home-btn {
+    cursor: pointer;
+    padding: 1.1rem;
+    color: rgb(224, 216, 191);
+    font-weight: 600;
+    font-size: 2rem;
+    &:active {
+      background-color: $btn-active-color;
     }
-
-    .home-btn{
-        cursor: pointer;
-        padding: 1.1rem;
-        color: $btn-text-color;
-        font-weight: 600;
-
-        &:active{
-            background-color: $btn-active-color;
-        }
-    }
+  }
 }

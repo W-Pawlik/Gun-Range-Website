@@ -1,42 +1,42 @@
-@use '../base/' as fonts;
-@use '../abstracts/' as colors;
+@use "../base/" as fonts;
+@use "../abstracts/" as colors;
 
-.about-me-section{
-    padding: 4rem 2rem;
+.about-me-section {
+  padding: 4rem 2rem;
 
-    .about-me-content{
-        align-items: start;
+  .about-me-content {
+    align-items: start;
+    margin-left: 8rem;
 
-        .about-title{
-            font-size: fonts.$title-h2;
-            color: colors.$h2-title-color;
-            font-weight: fonts.$title-h2-weight;
-            margin-bottom: 1rem;
-        }
-
-        .short-desc-about{
-            color: red;
-            font-size: fonts.$subtitle-size;
-            margin-bottom: 1rem;
-
-        }
-
-        .description-about{
-            color: blue;
-            font-size: fonts.$main-text-size;
-            line-height: 1.2;
-        }
+    .about-title {
+      font-size: fonts.$title-h2;
+      color: colors.$h2-title-color;
+      font-weight: fonts.$title-h2-weight;
     }
 
-    .img-container{
-        grid-row: 2;
-        grid-column: 1/span 2 ;
-    
-        .img-in-con{
-            height: 13rem;
-        }
+    .short-desc-about {
+      font-size: fonts.$subtitle-size;
+      margin-bottom: 1rem;
     }
+
+    .description-about {
+      font-size: fonts.$main-text-size;
+      line-height: 1.2;
+    }
+  }
+
+  .about-me-img {
+    height: 30rem;
+    border-radius: 10px;
+    border: 1px solid colors.$h2-title-color;
+  }
+
+  .img-container {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    align-self: flex-start;
+    .img-in-con {
+      height: 13rem;
+    }
+  }
 }
-
-
-

@@ -1,11 +1,12 @@
-@import '../abstracts/variables';
+@import "../abstracts/variables";
 
 .btn {
-    background-color: $btn-bg-color;
-    padding: 0.5rem 1rem 0.2rem 1rem;
-    border-radius: 1rem;
+  //   background-color: $btn-bg-color;
+  border: 3px solid $btn-bg-color;
+  padding: 0.5rem 1rem 0.2rem 1rem;
+  border-radius: 1rem;
 
-    &:hover{
-        background-color: #483a3a;
-    }
+  &:hover {
+    background-color: #483a3a;
+  }
 }

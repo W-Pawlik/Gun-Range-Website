@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as colors;
+@use "../base/typography" as fonts;
+
+.gun-range-info-section {
+  padding: 4rem 2rem;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+
+  .section-subtitle {
+    font-size: fonts.$subtitle-size;
+    color: colors.$h2-title-color;
+    margin-bottom: 1rem;
+  }
+
+  .gun-range-description {
+    width: 40rem;
+    text-align: center;
+    font-size: fonts.$main-text-size;
+    line-height: 1.1;
+  }
+}
