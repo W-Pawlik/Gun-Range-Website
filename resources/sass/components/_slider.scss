@@ -10,16 +10,18 @@
 
     .slide {
       min-width: 100%;
-      transition: opacity 0.5s ease-in-out;
-
-      &.data-active {
-        opacity: 1;
-      }
+      display: none;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide[data-active] {
+      display: block;
     }
 
     .slide-img {
       width: 100%;
       display: block;
+      height: 35rem;
+      object-fit: cover;
     }
   }
 
