@@ -1,0 +1,26 @@
+.localization-section {
+  padding: 5rem 0;
+
+  .subtitle {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+  .sm-container {
+    display: flex;
+    width: 40rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-around;
+
+    .sm-icon {
+      width: 4rem;
+      font-size: 3rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

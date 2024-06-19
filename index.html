@@ -8,6 +8,9 @@
 
     <script defer src="./resources/js/index.js" type="module"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -252,6 +255,19 @@
             </ul>
             <button class="btn-prev" >&#10094</button>
             <button class="btn-next" >&#10095</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="localization-section">
+        <div class="container flex-col-center-h-v">
+          <h2 class="section-title">Jak do nas trafisz?</h2>
+            <div id="map"></div>
+          <h3 class="subtitle">Znajdziesz nas również na SM!</h3>
+          <div class="sm-container">
+            <i class="fa-brands fa-facebook sm-icon"></i>
+            <i class="fa-brands fa-instagram sm-icon"></i>
+            <i class="fa-brands fa-google sm-icon"></i>
           </div>
         </div>
       </section>

@@ -171,6 +171,13 @@ body {
   right: 0;
 }
 
+#map {
+  height: 30rem;
+  width: 60%;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
 .about-me-section {
   padding: 4rem 2rem;
 }
@@ -341,4 +348,27 @@ body {
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.1;
+}
+
+.localization-section {
+  padding: 5rem 0;
+}
+.localization-section .subtitle {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+.localization-section .sm-container {
+  display: flex;
+  width: 40rem;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.localization-section .sm-container .sm-icon {
+  width: 4rem;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+.localization-section .sm-container .sm-icon:hover {
+  font-size: 3.5rem;
 }/*# sourceMappingURL=style.css.map */
