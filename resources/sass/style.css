@@ -70,12 +70,21 @@ body {
 }
 
 .btn {
-  border: 3px solid #534343;
+  background-color: #38785e;
+  border: 3px solid #2d604b;
   padding: 0.5rem 1rem 0.2rem 1rem;
-  border-radius: 1rem;
+  border-radius: 10px;
+  color: rgb(224, 216, 191);
 }
 .btn:hover {
-  background-color: #483a3a;
+  background-color: #7c4444;
+  border: 3px solid #38785e;
+}
+
+.form-btn {
+  width: 10rem;
+  padding: 0.5rem;
+  align-self: center;
 }
 
 .nav-items {
@@ -111,7 +120,7 @@ body {
   color: #423636;
 }
 .nav-items .btn {
-  color: #827a6d;
+  color: rgb(224, 216, 191);
 }
 
 .section-title {
@@ -187,12 +196,13 @@ body {
 }
 .about-me-section .about-me-content .about-title {
   font-size: 5rem;
-  color: #322828;
+  color: #517c75;
   font-weight: 700;
 }
 .about-me-section .about-me-content .short-desc-about {
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  color: #005b46;
 }
 .about-me-section .about-me-content .description-about {
   font-size: 1.4rem;
@@ -201,7 +211,7 @@ body {
 .about-me-section .about-me-img {
   height: 30rem;
   border-radius: 10px;
-  border: 1px solid #322828;
+  border: 1px solid #517c75;
 }
 .about-me-section .img-container {
   grid-row: 2;
@@ -244,15 +254,15 @@ body {
   font-size: 4rem;
   letter-spacing: 0.2rem;
   color: rgb(240, 239, 224);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-top: 0.2rem;
   margin-bottom: 4rem;
 }
 .home .home-btn {
   cursor: pointer;
-  padding: 1.1rem;
-  color: rgb(224, 216, 191);
+  padding: 0.5rem;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .home .home-btn:active {
   background-color: #423636;
@@ -271,9 +281,9 @@ body {
 }
 .step-card .step-title {
   font-size: 3rem;
-  color: #322828;
-  -webkit-text-decoration: underline solid 5px #322828;
-          text-decoration: underline solid 5px #322828;
+  color: #517c75;
+  -webkit-text-decoration: underline solid 5px #517c75;
+          text-decoration: underline solid 5px #517c75;
 }
 .step-card .step-description {
   font-size: 1.4rem;
@@ -286,10 +296,6 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
 }
 
-.what-to-take-section {
-  padding: 4rem 2rem;
-}
-
 .plans-section {
   padding: 4rem 2rem;
 }
@@ -300,7 +306,7 @@ body {
   gap: 0;
 }
 .plans-section .plans-container .plan-card {
-  border: 2px solid #322828;
+  border: 2px solid #517c75;
   padding: 2rem;
   max-width: 20rem;
   text-align: center;
@@ -340,7 +346,7 @@ body {
 }
 .gun-range-info-section .section-subtitle {
   font-size: 2.2rem;
-  color: #322828;
+  color: #517c75;
   margin-bottom: 1rem;
 }
 .gun-range-info-section .gun-range-description {
@@ -371,4 +377,49 @@ body {
 }
 .localization-section .sm-container .sm-icon:hover {
   font-size: 3.5rem;
+}
+
+.contact-form {
+  display: flex;
+  background-color: #7d7358;
+  padding: 3rem;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.contact-form input {
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+.contact-form .message {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .message #message {
+  resize: none;
+  width: 20rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.footer-section {
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+}
+.footer-section .footer-con {
+  height: 5rem;
+  align-items: center;
+}
+.footer-section .copyright-text {
+  border-right: 1px solid black;
+  padding-right: 0.6rem;
+}
+.footer-section .developer {
+  border-right: 1px solid black;
+  padding-right: 0.6rem;
 }/*# sourceMappingURL=style.css.map */

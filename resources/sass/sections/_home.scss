@@ -20,17 +20,17 @@
   .home-title {
     font-size: 4rem;
     letter-spacing: 0.2rem;
-    color: rgb(240, 239, 224);
+    color: $main-title-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 0.2rem;
     margin-bottom: 4rem;
   }
 
   .home-btn {
     cursor: pointer;
-    padding: 1.1rem;
-    color: rgb(224, 216, 191);
+    padding: 0.5rem;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.7rem;
     &:active {
       background-color: $btn-active-color;
     }

@@ -1,12 +1,20 @@
 @import "../abstracts/variables";
 
 .btn {
-  //   background-color: $btn-bg-color;
-  border: 3px solid $btn-bg-color;
+  background-color: $btn-bg-color;
+  border: 3px solid #2d604b;
   padding: 0.5rem 1rem 0.2rem 1rem;
-  border-radius: 1rem;
+  border-radius: 10px;
+  color: $btn-text-color;
 
   &:hover {
-    background-color: #483a3a;
+    background-color: #7c4444;
+    border: 3px solid $btn-bg-color;
   }
+}
+
+.form-btn {
+  width: 10rem;
+  padding: 0.5rem;
+  align-self: center;
 }
