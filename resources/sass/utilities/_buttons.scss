@@ -2,14 +2,14 @@
 
 .btn {
   background-color: $btn-bg-color;
-  border: 3px solid #2d604b;
+  border: 2px solid #536e1f;
   padding: 0.5rem 1rem 0.2rem 1rem;
   border-radius: 10px;
   color: $btn-text-color;
 
   &:hover {
-    background-color: #7c4444;
-    border: 3px solid $btn-bg-color;
+    background-color: #5f7e23;
+    // border: 3px solid $btn-bg-color;
   }
 }
 

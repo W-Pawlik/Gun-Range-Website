@@ -17,6 +17,11 @@ body {
     line-height: 1;
     font-weight: 400;
     overflow-x: hidden;
-    background-color: $background-color;
+    // background-color: $background-color;
+    background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // object-fit: contain;
+    // background-position: 50% 50%;
     font-family: "Latio", sans-serif;
 }

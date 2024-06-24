@@ -15,7 +15,7 @@ body {
   line-height: 1;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: #b2a78a;
+  background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
   font-family: "Latio", sans-serif;
 }
 
@@ -70,15 +70,14 @@ body {
 }
 
 .btn {
-  background-color: #38785e;
-  border: 3px solid #2d604b;
+  background-color: #779D2C;
+  border: 2px solid #536e1f;
   padding: 0.5rem 1rem 0.2rem 1rem;
   border-radius: 10px;
   color: rgb(224, 216, 191);
 }
 .btn:hover {
-  background-color: #7c4444;
-  border: 3px solid #38785e;
+  background-color: #5f7e23;
 }
 
 .form-btn {
@@ -94,8 +93,12 @@ body {
   list-style: none;
   font-size: 1.4rem;
 }
+.nav-items:nth-last-child(n) .btn::after {
+  height: 0;
+  background-color: red;
+}
 .nav-items .nav-link {
-  color: #2e210b;
+  color: #F7FCE8;
   font-weight: 700;
   position: relative;
 }
@@ -107,17 +110,17 @@ body {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: #2e210b;
+  background: #F7FCE8;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
 }
 .nav-items .nav-link:hover::after {
   width: 100%;
   left: 0;
-  background: #2e210b;
+  background: #F7FCE8;
 }
 .nav-items .nav-link:active {
-  color: #423636;
+  color: #475e1a;
 }
 .nav-items .btn {
   color: rgb(224, 216, 191);
@@ -125,8 +128,19 @@ body {
 
 .section-title {
   font-size: 3rem;
+  color: #730C00;
+  border-bottom: 10px solid #730C00;
+  padding-bottom: 0.5rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+section:nth-child(odd) .section-title {
+  border-right: 10px solid #730C00;
+}
+
+section:nth-child(even) .section-title {
+  border-left: 10px solid #730C00;
 }
 
 .slider {
@@ -151,8 +165,7 @@ body {
   width: 100%;
   display: block;
   height: 35rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .slider .btn-prev,
 .slider .btn-next {
@@ -196,22 +209,26 @@ body {
 }
 .about-me-section .about-me-content .about-title {
   font-size: 5rem;
-  color: #517c75;
+  color: #730C00;
   font-weight: 700;
+  border-bottom: 10px solid #730C00;
+  border-left: 10px solid #730C00;
+  padding: 0 0.5rem;
 }
 .about-me-section .about-me-content .short-desc-about {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #005b46;
+  color: #730C00;
 }
 .about-me-section .about-me-content .description-about {
   font-size: 1.4rem;
+  color: #402E32;
   line-height: 1.2;
 }
 .about-me-section .about-me-img {
   height: 30rem;
   border-radius: 10px;
-  border: 1px solid #517c75;
+  border: 1px solid #730C00;
 }
 .about-me-section .img-container {
   grid-row: 2;
@@ -248,7 +265,6 @@ body {
 .home .title-container {
   grid-column: 2;
   align-self: center;
-  margin-bottom: 10rem;
 }
 .home .home-title {
   font-size: 4rem;
@@ -265,11 +281,13 @@ body {
   font-size: 1.7rem;
 }
 .home .home-btn:active {
-  background-color: #423636;
+  background-color: #475e1a;
 }
 
 .step-card {
+  width: 90%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+  background-color: rgba(79, 69, 55, 0.737254902);
   padding: 1rem;
   border-radius: 10px;
   padding: 2rem;
@@ -281,9 +299,8 @@ body {
 }
 .step-card .step-title {
   font-size: 3rem;
-  color: #517c75;
-  -webkit-text-decoration: underline solid 5px #517c75;
-          text-decoration: underline solid 5px #517c75;
+  color: #730C00;
+  text-decoration: underline solid 5px #730C00;
 }
 .step-card .step-description {
   font-size: 1.4rem;
@@ -306,12 +323,12 @@ body {
   gap: 0;
 }
 .plans-section .plans-container .plan-card {
-  border: 2px solid #517c75;
+  border: 2px solid #730C00;
   padding: 2rem;
   max-width: 20rem;
   text-align: center;
   height: 26rem;
-  background-color: #887353;
+  background-color: #9AC7B9;
   border-radius: 8px;
 }
 .plans-section .plans-container .plan-card .plan-title {
@@ -335,7 +352,7 @@ body {
 .plans-section .plans-container .plan-card:nth-child(2) {
   transform: translateY(-2rem);
   scale: 1.1;
-  background-color: #ddc673;
+  background-color: #730C00;
 }
 
 .gun-range-info-section {
@@ -346,7 +363,7 @@ body {
 }
 .gun-range-info-section .section-subtitle {
   font-size: 2.2rem;
-  color: #517c75;
+  color: #730C00;
   margin-bottom: 1rem;
 }
 .gun-range-info-section .gun-range-description {
@@ -381,7 +398,8 @@ body {
 
 .contact-form {
   display: flex;
-  background-color: #7d7358;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   padding: 3rem;
   flex-direction: column;
   border-radius: 15px;
@@ -408,10 +426,10 @@ body {
 }
 
 .footer-section {
-  padding-top: 8rem;
-  padding-bottom: 1rem;
+  padding-top: 9rem;
 }
 .footer-section .footer-con {
+  background-color: rgba(0, 0, 0, 0.1);
   height: 5rem;
   align-items: center;
 }
@@ -422,4 +440,10 @@ body {
 .footer-section .developer {
   border-right: 1px solid black;
   padding-right: 0.6rem;
+}
+.footer-section .sm-footer-icon {
+  margin-right: 0.6rem;
+}
+.footer-section .contact-dev {
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */

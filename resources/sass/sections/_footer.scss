@@ -1,8 +1,8 @@
 .footer-section {
-  padding-top: 8rem;
-  padding-bottom: 1rem;
+  padding-top: 9rem;
 
   .footer-con {
+    background-color: rgba(0,0,0,0.1);
     height: 5rem;
     align-items: center;
   }
@@ -16,4 +16,12 @@
     border-right: 1px solid black;
     padding-right: 0.6rem;
   }
+.sm-footer-icon{
+  margin-right: 0.6rem;
+}
+
+.contact-dev{
+  margin-right: 1rem;
+}
+
 }

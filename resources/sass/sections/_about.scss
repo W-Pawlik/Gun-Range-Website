@@ -7,21 +7,29 @@
   .about-me-content {
     align-items: start;
     margin-left: 8rem;
+    
 
     .about-title {
       font-size: fonts.$title-h2;
       color: colors.$h2-title-color;
       font-weight: fonts.$title-h2-weight;
+      border-bottom: 10px solid #730C00;
+      border-left: 10px solid #730C00;
+      
+      padding: 0 0.5rem;
     }
 
     .short-desc-about {
       font-size: fonts.$subtitle-size;
       margin-bottom: 1rem;
       color: colors.$subtitle-color;
+      // padding-left: 1rem;
+      // border-left: 20px solid #730C00;
     }
 
     .description-about {
       font-size: fonts.$main-text-size;
+      color: #402E32;
       line-height: 1.2;
     }
   }

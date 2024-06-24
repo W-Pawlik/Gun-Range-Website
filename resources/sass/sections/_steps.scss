@@ -2,7 +2,9 @@
 @use "../base/typography" as fonts;
 
 .step-card {
+  width: 90%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+  background-color: #4f4537bc;
   padding: 1rem;
   border-radius: 10px;
   padding: 2rem;
