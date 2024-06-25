@@ -33,14 +33,15 @@
       display: flex;
 
       .weapon-img {
+        position: relative;
         width: 10rem;
         transition: all 0.6s ease;
         border: 2px solid colors.$h2-title-color;
         border-radius: 20px;
-        background: #730c0069;
+        // background: #730c0069;
 
         &:hover {
-          background: linear-gradient(rgba(0, 0, 0, 0.2), #730c00c2);
+          background: linear-gradient(rgba(0, 0, 0, 0.2), #730c0069);
         }
       }
     }

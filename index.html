@@ -282,14 +282,19 @@
           <h2 class="section-title">Napisz albo zadzwoń</h2>
         </div>
         <div class="container flex-col-center-h-v">
-          <form action="" class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
             <div>
               
             </div>
+            <input
+                  type="hidden"
+                  name="access_key"
+                  value="3559e539-47e9-4c72-8c81-39ad7cd5d0c4"
+                />
             <label for="full-name">Imie i naziwsko</label>
-            <input type="text" id="full-name" placeholder="Name Surname" required>
+            <input type="text" id="full-name" placeholder="Name Surname" name="name" required>
             <label for="email">email</label>
-            <input type="email" id="email" placeholder="me@example.com" required>
+            <input type="email" id="email" name="email" placeholder="me@example.com" required>
             <div class="message">
 
               <label for="message">Wiadomość</label>
