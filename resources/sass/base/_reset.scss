@@ -1,27 +1,24 @@
-@import '../abstracts/variables';
+@import "../abstracts/variables";
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%px;
-    overflow-x: hidden;
+  font-size: 62.5%px;
+  overflow-x: hidden;
 }
 
 body {
-    line-height: 1;
-    font-weight: 400;
-    overflow-x: hidden;
-    // background-color: $background-color;
-    background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // object-fit: contain;
-    // background-position: 50% 50%;
-    font-family: "Latio", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
+  background-size: cover;
+  object-fit: contain;
+  font-family: "Latio", sans-serif;
 }

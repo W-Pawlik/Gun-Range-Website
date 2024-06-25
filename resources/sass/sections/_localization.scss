@@ -1,25 +1,40 @@
+@use "../abstracts/variables" as colors;
+
 .localization-section {
   padding: 5rem 0;
 
-  .subtitle {
-    margin-top: 5rem;
-    font-size: 2rem;
-  }
-
-  .sm-container {
+  .sm-subsection {
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/resources/images/pexels-shonejai-445753-1227511.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    width: 40rem;
-    height: 10rem;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    color: colors.$sm-color;
 
-    .sm-icon {
-      width: 4rem;
-      font-size: 3rem;
-      transition: all 0.3s ease;
+    .subtitle {
+      margin-top: 5rem;
+      font-size: 2rem;
+    }
 
-      &:hover {
-        font-size: 3.5rem;
+    .sm-container {
+      display: flex;
+      width: 40rem;
+      height: 10rem;
+      align-items: center;
+      justify-content: space-around;
+
+      .sm-icon {
+        width: 4rem;
+        font-size: 3rem;
+        transition: all 0.3s ease;
+        color: colors.$sm-color;
+        &:hover {
+          font-size: 3.5rem;
+        }
       }
     }
   }

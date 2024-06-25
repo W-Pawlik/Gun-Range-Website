@@ -8,16 +8,15 @@
   list-style: none;
   font-size: $nav-font-size;
 
-  &:nth-last-child(n) .btn::after{
+  &:nth-last-child(n) .btn::after {
     height: 0;
     background-color: red;
   }
 
   .nav-link {
-    color: $main-text-color;
+    color: $nav-text-color;
     font-weight: $nav-font-weight;
     position: relative;
-
 
     &:after {
       content: "";

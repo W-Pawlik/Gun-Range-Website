@@ -1,19 +1,24 @@
-@use '../base/' as fonts;
-@use '../abstracts/variables' as colors;
+@use "../base/" as fonts;
+@use "../abstracts/variables" as colors;
 
-.section-title{
-    font-size: fonts.$section-title-size;
-    color: colors.$h2-title-color;
-    border-bottom: 10px solid #730C00;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+.section-title {
+  font-size: fonts.$section-title-size;
+  color: colors.$h2-title-color;
+  border-bottom: 10px solid #730c00;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  //   width: 80%;
 }
 
-section:nth-child(odd) .section-title{
-    border-right: 10px solid #730C00;
+section:nth-child(odd) .section-title {
+  border-right: 10px solid #730c00;
+  padding-right: 0.5rem;
+  text-align: right;
 }
 
-section:nth-child(even) .section-title{
-    border-left: 10px solid #730C00;
+section:nth-child(even) .section-title {
+  border-left: 10px solid #730c00;
+  padding-left: 0.5rem;
+  text-align: start;
 }

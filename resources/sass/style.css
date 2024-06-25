@@ -16,6 +16,9 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   font-family: "Latio", sans-serif;
 }
 
@@ -70,7 +73,7 @@ body {
 }
 
 .btn {
-  background-color: #779D2C;
+  background-color: #779d2c;
   border: 2px solid #536e1f;
   padding: 0.5rem 1rem 0.2rem 1rem;
   border-radius: 10px;
@@ -98,7 +101,7 @@ body {
   background-color: red;
 }
 .nav-items .nav-link {
-  color: #F7FCE8;
+  color: #f7fce8;
   font-weight: 700;
   position: relative;
 }
@@ -110,14 +113,14 @@ body {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: #F7FCE8;
+  background: black;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
 }
 .nav-items .nav-link:hover::after {
   width: 100%;
   left: 0;
-  background: #F7FCE8;
+  background: black;
 }
 .nav-items .nav-link:active {
   color: #475e1a;
@@ -128,19 +131,23 @@ body {
 
 .section-title {
   font-size: 3rem;
-  color: #730C00;
-  border-bottom: 10px solid #730C00;
+  color: #730c00;
+  border-bottom: 10px solid #730c00;
   padding-bottom: 0.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 
 section:nth-child(odd) .section-title {
-  border-right: 10px solid #730C00;
+  border-right: 10px solid #730c00;
+  padding-right: 0.5rem;
+  text-align: right;
 }
 
 section:nth-child(even) .section-title {
-  border-left: 10px solid #730C00;
+  border-left: 10px solid #730c00;
+  padding-left: 0.5rem;
+  text-align: start;
 }
 
 .slider {
@@ -148,6 +155,8 @@ section:nth-child(even) .section-title {
   width: 100%;
   max-width: 70rem;
   overflow: hidden;
+  border-radius: 20px;
+  border: 3px solid #730c00;
 }
 .slider .slides {
   display: flex;
@@ -165,7 +174,8 @@ section:nth-child(even) .section-title {
   width: 100%;
   display: block;
   height: 35rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider .btn-prev,
 .slider .btn-next {
@@ -194,6 +204,7 @@ section:nth-child(even) .section-title {
 }
 
 #map {
+  margin-bottom: 4rem;
   height: 30rem;
   width: 60%;
   border-radius: 20px;
@@ -209,26 +220,26 @@ section:nth-child(even) .section-title {
 }
 .about-me-section .about-me-content .about-title {
   font-size: 5rem;
-  color: #730C00;
+  color: #730c00;
   font-weight: 700;
-  border-bottom: 10px solid #730C00;
-  border-left: 10px solid #730C00;
+  border-bottom: 10px solid #730c00;
+  border-left: 10px solid #730c00;
   padding: 0 0.5rem;
 }
 .about-me-section .about-me-content .short-desc-about {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #730C00;
+  color: #a51d0d;
 }
 .about-me-section .about-me-content .description-about {
-  font-size: 1.4rem;
-  color: #402E32;
+  font-size: 1.5rem;
+  color: black;
   line-height: 1.2;
 }
 .about-me-section .about-me-img {
   height: 30rem;
   border-radius: 10px;
-  border: 1px solid #730C00;
+  border: 1px solid #730c00;
 }
 .about-me-section .img-container {
   grid-row: 2;
@@ -253,18 +264,19 @@ section:nth-child(even) .section-title {
 }
 
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/images/background.jpg");
+  background-image: linear-gradient(to left, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0)), url("/resources/images/pexels-pixabay-78783.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  height: 90vh;
+  height: 94vh;
   width: 100%;
 }
 .home .title-container {
   grid-column: 2;
   align-self: center;
+  margin-left: 4rem;
 }
 .home .home-title {
   font-size: 4rem;
@@ -292,6 +304,7 @@ section:nth-child(even) .section-title {
   border-radius: 10px;
   padding: 2rem;
   transition: all 0.4s ease;
+  position: relative;
 }
 .step-card .step-icon {
   font-size: 4rem;
@@ -299,14 +312,16 @@ section:nth-child(even) .section-title {
 }
 .step-card .step-title {
   font-size: 3rem;
-  color: #730C00;
-  text-decoration: underline solid 5px #730C00;
+  color: #730c00;
+  -webkit-text-decoration: underline solid 5px #730c00;
+          text-decoration: underline solid 5px #730c00;
 }
 .step-card .step-description {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   padding: 2rem;
   max-width: 25rem;
+  color: rgb(240, 239, 224);
 }
 .step-card:hover {
   transform: translateY(-1rem);
@@ -317,23 +332,43 @@ section:nth-child(even) .section-title {
   padding: 4rem 2rem;
 }
 .plans-section .section-title {
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 .plans-section .plans-container {
   gap: 0;
 }
 .plans-section .plans-container .plan-card {
-  border: 2px solid #730C00;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #730c00;
   padding: 2rem;
-  max-width: 20rem;
+  max-width: 30rem;
   text-align: center;
-  height: 26rem;
-  background-color: #9AC7B9;
+  height: 35rem;
+  background-color: #fbe3da;
   border-radius: 8px;
+}
+.plans-section .plans-container .plan-card:nth-child(2):before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Najlepsza cena";
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  position: absolute;
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  top: -50px;
+  left: -40px;
+  width: 6rem;
+  height: 6rem;
+  background-color: #779d2c;
 }
 .plans-section .plans-container .plan-card .plan-title {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .plans-section .plans-container .plan-card .price-span {
   font-size: 1.5rem;
@@ -341,68 +376,119 @@ section:nth-child(even) .section-title {
 }
 .plans-section .plans-container .plan-card .price {
   font-size: 4rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 3rem;
 }
 .plans-section .plans-container .plan-card .plan-list {
   list-style: none;
   margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2;
   font-weight: 500;
+  text-align: start;
+}
+.plans-section .plans-container .plan-card .plan-list .check {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+  color: #779d2c;
+}
+.plans-section .plans-container .plan-card .plan-btn {
+  width: 75%;
+  align-self: center;
+  font-size: 1.4rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
 }
 .plans-section .plans-container .plan-card:nth-child(2) {
   transform: translateY(-2rem);
   scale: 1.1;
-  background-color: #730C00;
+  background-color: #dbd1ce;
 }
 
 .gun-range-info-section {
   padding: 4rem 2rem;
 }
 .gun-range-info-section .section-title {
-  margin-bottom: 0;
+  margin-bottom: 6rem;
 }
-.gun-range-info-section .section-subtitle {
+.gun-range-info-section .gun-range-content {
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.gun-range-info-section .gun-range-content .section-subtitle {
   font-size: 2.2rem;
-  color: #730C00;
-  margin-bottom: 1rem;
+  color: #730c00;
+  margin-bottom: 2rem;
 }
-.gun-range-info-section .gun-range-description {
+.gun-range-info-section .gun-range-content .gun-range-description {
   width: 40rem;
-  text-align: center;
-  font-size: 1.4rem;
+  text-align: start;
+  font-size: 1.5rem;
   line-height: 1.1;
+  margin-bottom: 3rem;
+  color: black;
+}
+.gun-range-info-section .gun-range-content .guns-container {
+  gap: 1rem;
+  display: flex;
+}
+.gun-range-info-section .gun-range-content .guns-container .weapon-img {
+  width: 10rem;
+  transition: all 0.6s ease;
+  border: 2px solid #730c00;
+  border-radius: 20px;
+  background: rgba(115, 12, 0, 0.4117647059);
+}
+.gun-range-info-section .gun-range-content .guns-container .weapon-img:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(115, 12, 0, 0.7607843137));
 }
 
 .localization-section {
   padding: 5rem 0;
 }
-.localization-section .subtitle {
+.localization-section .sm-subsection {
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/resources/images/pexels-shonejai-445753-1227511.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(240, 239, 224);
+}
+.localization-section .sm-subsection .subtitle {
   margin-top: 5rem;
   font-size: 2rem;
 }
-.localization-section .sm-container {
+.localization-section .sm-subsection .sm-container {
   display: flex;
   width: 40rem;
   height: 10rem;
   align-items: center;
   justify-content: space-around;
 }
-.localization-section .sm-container .sm-icon {
+.localization-section .sm-subsection .sm-container .sm-icon {
   width: 4rem;
   font-size: 3rem;
   transition: all 0.3s ease;
+  color: rgb(240, 239, 224);
 }
-.localization-section .sm-container .sm-icon:hover {
+.localization-section .sm-subsection .sm-container .sm-icon:hover {
   font-size: 3.5rem;
 }
 
 .contact-form {
   display: flex;
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 3rem;
   flex-direction: column;
   border-radius: 15px;
+  align-items: center;
+  font-size: 1.2rem;
 }
 .contact-form input {
   border: 1px solid black;
@@ -410,6 +496,8 @@ section:nth-child(even) .section-title {
   margin-top: 0.3rem;
   padding: 0.2rem;
   border-radius: 5px;
+  width: 20rem;
+  height: 2rem;
 }
 .contact-form .message {
   display: flex;
@@ -417,7 +505,7 @@ section:nth-child(even) .section-title {
 }
 .contact-form .message #message {
   resize: none;
-  width: 20rem;
+  width: 30rem;
   height: 10rem;
   margin-bottom: 2rem;
   margin-top: 0.3rem;
@@ -426,7 +514,7 @@ section:nth-child(even) .section-title {
 }
 
 .footer-section {
-  padding-top: 9rem;
+  padding-top: 7rem;
 }
 .footer-section .footer-con {
   background-color: rgba(0, 0, 0, 0.1);

@@ -1,20 +1,24 @@
 @import "../abstracts/variables";
 
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/resources/images/background.jpg");
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("/resources/images/pexels-pixabay-78783.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  height: 90vh;
+  height: 94vh;
   width: 100%;
 
   .title-container {
     grid-column: 2;
     align-self: center;
-    
+    margin-left: 4rem;
   }
 
   .home-title {
