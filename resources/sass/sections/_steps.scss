@@ -5,10 +5,9 @@
   width: 90%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
   background-color: #4f4537bc;
-  padding: 1rem;
   border-radius: 10px;
   padding: 2rem;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease, opacity 1s ease;
   position: relative;
 
   .step-icon {

@@ -18,6 +18,7 @@
     .subtitle {
       margin-top: 5rem;
       font-size: 2rem;
+      transition: all 1s ease;
     }
 
     .sm-container {
@@ -26,11 +27,12 @@
       height: 10rem;
       align-items: center;
       justify-content: space-around;
+      transition: all 1s ease;
 
       .sm-icon {
         width: 4rem;
         font-size: 3rem;
-        transition: all 0.3s ease;
+        transition: font-size 0.3s ease, transform 2s ease, opacity 2s ease;
         color: colors.$sm-color;
         &:hover {
           font-size: 3.5rem;

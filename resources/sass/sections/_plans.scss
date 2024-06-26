@@ -21,6 +21,11 @@
       height: 35rem;
       background-color: #fbe3da;
       border-radius: 8px;
+      transition: all 1s ease;
+
+      &:nth-child(2) {
+        z-index: 999;
+      }
 
       &:nth-child(2):before {
         display: flex;

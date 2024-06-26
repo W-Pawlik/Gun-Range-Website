@@ -89,6 +89,16 @@ body {
   align-self: center;
 }
 
+.hidden-bottom {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-1rem);
+}
+
 .nav-items {
   display: flex;
   flex-direction: row;
@@ -235,6 +245,7 @@ section:nth-child(even) .section-title {
   font-size: 1.5rem;
   color: black;
   line-height: 1.2;
+  transition: all 1s ease;
 }
 .about-me-section .about-me-img {
   height: 30rem;
@@ -300,10 +311,9 @@ section:nth-child(even) .section-title {
   width: 90%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
   background-color: rgba(79, 69, 55, 0.737254902);
-  padding: 1rem;
   border-radius: 10px;
   padding: 2rem;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease, opacity 1s ease;
   position: relative;
 }
 .step-card .step-icon {
@@ -347,6 +357,10 @@ section:nth-child(even) .section-title {
   height: 35rem;
   background-color: #fbe3da;
   border-radius: 8px;
+  transition: all 1s ease;
+}
+.plans-section .plans-container .plan-card:nth-child(2) {
+  z-index: 999;
 }
 .plans-section .plans-container .plan-card:nth-child(2):before {
   display: flex;
@@ -415,6 +429,7 @@ section:nth-child(even) .section-title {
   align-self: flex-start;
   margin-top: 2rem;
   margin-left: 1rem;
+  transition: all 1s ease;
 }
 .gun-range-info-section .gun-range-content .section-subtitle {
   font-size: 2.2rem;
@@ -428,6 +443,7 @@ section:nth-child(even) .section-title {
   line-height: 1.1;
   margin-bottom: 3rem;
   color: black;
+  transition: all 1s ease;
 }
 .gun-range-info-section .gun-range-content .guns-container {
   gap: 1rem;
@@ -436,7 +452,7 @@ section:nth-child(even) .section-title {
 .gun-range-info-section .gun-range-content .guns-container .weapon-img {
   position: relative;
   width: 10rem;
-  transition: all 0.6s ease;
+  transition: background 0.6s ease, opacity 1s ease, transform 1s ease;
   border: 2px solid #730c00;
   border-radius: 20px;
 }
@@ -461,6 +477,7 @@ section:nth-child(even) .section-title {
 .localization-section .sm-subsection .subtitle {
   margin-top: 5rem;
   font-size: 2rem;
+  transition: all 1s ease;
 }
 .localization-section .sm-subsection .sm-container {
   display: flex;
@@ -468,11 +485,12 @@ section:nth-child(even) .section-title {
   height: 10rem;
   align-items: center;
   justify-content: space-around;
+  transition: all 1s ease;
 }
 .localization-section .sm-subsection .sm-container .sm-icon {
   width: 4rem;
   font-size: 3rem;
-  transition: all 0.3s ease;
+  transition: font-size 0.3s ease, transform 2s ease, opacity 2s ease;
   color: rgb(240, 239, 224);
 }
 .localization-section .sm-subsection .sm-container .sm-icon:hover {
@@ -489,6 +507,7 @@ section:nth-child(even) .section-title {
   border-radius: 15px;
   align-items: center;
   font-size: 1.2rem;
+  transition: all 1s ease;
 }
 .contact-form input {
   border: 1px solid black;
