@@ -1,0 +1,90 @@
+/* ----------------- BELOW 1344px ----------------- */
+@media (max-width: 84rem) {
+  .home-title {
+    font-size: 3.4rem !important;
+  }
+  .home-btn {
+    font-size: 1.5rem !important;
+  }
+
+  .about-me-img {
+    align-self: center;
+  }
+
+  .img-in-con {
+    height: 11rem !important;
+  }
+
+  .step-description {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* ----------------- BELOW 1200px ----------------- */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .home-title {
+    font-size: 5rem !important;
+  }
+
+  .plan-card:nth-child(2):before {
+    top: -30px !important;
+    left: -20px !important;
+  }
+}
+
+/* ----------------- BELOW 1040px ----------------- */
+
+@media (max-width: 65rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ----------------- BELOW 850px ----------------- */
+
+@media (max-width: 53em) {
+  html {
+    font-size: 40%;
+  }
+
+  .plan-card:nth-child(2):before {
+    top: -25px !important;
+    left: -15px !important;
+  }
+
+  .form-btn {
+    width: 19rem !important;
+  }
+
+  input {
+    font-size: 1.7rem;
+    width: 23rem !important;
+    padding: 1.3rem !important;
+  }
+
+  #message {
+    font-size: 1.7rem !important;
+    padding: 1.3rem !important;
+  }
+}
+
+/* ----------------- BELOW 660px- ----------------- */
+
+@media (max-width: 41.25em) {
+  .title-container {
+    grid-column: 1 / span 2 !important;
+    justify-self: center;
+  }
+  .flex-row-center-h-v {
+    flex-direction: column !important;
+  }
+}
+
+/* ----------------- BELOW 548px ----------------- */
+
+@media (max-width: 34.25em) {
+}
