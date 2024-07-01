@@ -63,11 +63,54 @@
     grid-column: 1/span 2 !important;
     justify-self: center;
   }
-  .flex-row-center-h-v {
+  .mobile-col {
     flex-direction: column !important;
+    align-items: center;
+  }
+  .gun-range-content {
+    align-self: center !important;
+    margin-bottom: 2rem;
   }
 }
 /* ----------------- BELOW 548px ----------------- */
+@media (max-width: 34.25em) {
+  .about-me-mobile {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 3rem !important;
+  }
+  .img-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: center !important;
+  }
+  .step-card {
+    width: 16rem !important;
+  }
+  .plan-card {
+    height: 100% !important;
+  }
+  .plan-card:nth-child(2) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    height: 70% !important;
+    align-self: center;
+  }
+  .plan-card:nth-child(2) .plan-list {
+    align-self: center !important;
+  }
+  .mobile-plans {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #map {
+    width: 100% !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -87,8 +130,7 @@ body {
   overflow-x: hidden;
   background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
   background-size: cover;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   font-family: "Latio", sans-serif;
 }
 
@@ -254,8 +296,7 @@ section:nth-child(even) .section-title {
   width: 100%;
   display: block;
   height: 35rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .slider .btn-prev,
 .slider .btn-next {
@@ -393,8 +434,7 @@ section:nth-child(even) .section-title {
 .step-card .step-title {
   font-size: 3rem;
   color: #730c00;
-  -webkit-text-decoration: underline solid 5px #730c00;
-          text-decoration: underline solid 5px #730c00;
+  text-decoration: underline solid 5px #730c00;
 }
 .step-card .step-description {
   font-size: 1.5rem;
@@ -570,8 +610,7 @@ section:nth-child(even) .section-title {
 .contact-form {
   display: flex;
   background-color: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   padding: 3rem;
   flex-direction: column;
   border-radius: 15px;
