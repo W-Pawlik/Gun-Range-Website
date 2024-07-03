@@ -42,6 +42,49 @@
   html {
     font-size: 50%;
   }
+
+  .btn-mobile-nav {
+    display: block !important;
+  }
+
+  .nav {
+    background-color: #cebc9da4;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none !important;
+    height: 100%;
+    width: 30rem;
+    z-index: 9999;
+    transition: all 1s;
+    transform: translateX(-10em);
+
+    .nav-items {
+      flex-direction: column;
+      gap: 4rem;
+      font-size: 3rem;
+      margin-top: 8rem;
+    }
+  }
+
+  .nav-open .nav {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    transform: translateX(-2rem) rotate(180deg);
+    opacity: 1 !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    transform: translateX(10rem);
+
+    opacity: 0 !important;
+  }
 }
 
 /* ----------------- BELOW 850px ----------------- */
@@ -79,34 +122,33 @@
     grid-column: 1 / span 2 !important;
     justify-self: center;
   }
-  .mobile-col{
+  .mobile-col {
     flex-direction: column !important;
     align-items: center;
   }
-  .gun-range-content{
+  .gun-range-content {
     align-self: center !important;
     margin-bottom: 2rem;
   }
-  
 }
 
 /* ----------------- BELOW 548px ----------------- */
 
 @media (max-width: 34.25em) {
-  .about-me-mobile{
+  .about-me-mobile {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     gap: 3rem !important;
   }
-  .img-container{
+  .img-container {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-self: center !important;
   }
 
-  .step-card{
+  .step-card {
     width: 16rem !important;
   }
 
@@ -114,13 +156,13 @@
     height: 100% !important;
     &:nth-child(2) {
       grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-  height: 70% !important;
-  align-self: center;
-  .plan-list{
-    align-self: center !important;
-  }
+      grid-row-start: 1;
+      grid-row-end: span 2;
+      height: 70% !important;
+      align-self: center;
+      .plan-list {
+        align-self: center !important;
+      }
     }
 
     // &:nth-child(3){
@@ -130,14 +172,12 @@
     // }
   }
 
-  .mobile-plans{
+  .mobile-plans {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
-    
   }
-  #map{
+  #map {
     width: 100% !important;
   }
 }

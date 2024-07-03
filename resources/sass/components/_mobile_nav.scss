@@ -1,0 +1,15 @@
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background: none;
+
+  .icon-mobile-nav {
+    font-size: 3rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s;
+  }
+  .icon-mobile-nav[name="close-outline"] {
+    opacity: 0;
+  }
+}

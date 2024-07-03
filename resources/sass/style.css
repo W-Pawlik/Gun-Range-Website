@@ -34,6 +34,42 @@
   html {
     font-size: 50%;
   }
+  .btn-mobile-nav {
+    display: block !important;
+  }
+  .nav {
+    background-color: rgba(206, 188, 157, 0.6431372549);
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none !important;
+    height: 100%;
+    width: 30rem;
+    z-index: 9999;
+    transition: all 1s;
+    transform: translateX(-10em);
+  }
+  .nav .nav-items {
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
+  .nav-open .nav {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name=close-outline] {
+    transform: translateX(-2rem) rotate(180deg);
+    opacity: 1 !important;
+  }
+  .nav-open .icon-mobile-nav[name=menu-outline] {
+    transform: translateX(10rem);
+    opacity: 0 !important;
+  }
 }
 /* ----------------- BELOW 850px ----------------- */
 @media (max-width: 53em) {
@@ -130,7 +166,8 @@ body {
   overflow-x: hidden;
   background-image: url("/resources/images/vintage-grunge-paper-background.jpg");
   background-size: cover;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   font-family: "Latio", sans-serif;
 }
 
@@ -296,7 +333,8 @@ section:nth-child(even) .section-title {
   width: 100%;
   display: block;
   height: 35rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider .btn-prev,
 .slider .btn-next {
@@ -330,6 +368,21 @@ section:nth-child(even) .section-title {
   width: 60%;
   border-radius: 20px;
   border: 2px solid black;
+}
+
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background: none;
+}
+.btn-mobile-nav .icon-mobile-nav {
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 1s;
+}
+.btn-mobile-nav .icon-mobile-nav[name=close-outline] {
+  opacity: 0;
 }
 
 .about-me-section {
@@ -434,7 +487,8 @@ section:nth-child(even) .section-title {
 .step-card .step-title {
   font-size: 3rem;
   color: #730c00;
-  text-decoration: underline solid 5px #730c00;
+  -webkit-text-decoration: underline solid 5px #730c00;
+          text-decoration: underline solid 5px #730c00;
 }
 .step-card .step-description {
   font-size: 1.5rem;
@@ -610,7 +664,8 @@ section:nth-child(even) .section-title {
 .contact-form {
   display: flex;
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 3rem;
   flex-direction: column;
   border-radius: 15px;
