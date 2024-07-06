@@ -248,6 +248,22 @@ body {
   transform: translateX(-1rem);
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(190, 168, 130, 0.6117647059);
+  height: 4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 9999;
+}
+
+.sticky .home {
+  margin-top: 5rem;
+}
+
 .nav-items {
   display: flex;
   flex-direction: row;

@@ -14,7 +14,6 @@ export function mobileNav() {
   });
 
   navLinksEl.forEach(link => {
-    console.log(link);
     link.addEventListener('click', e => {
       headerEl.classList.remove('nav-open');
     });

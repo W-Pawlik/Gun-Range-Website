@@ -1,0 +1,15 @@
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #bea8829c;
+  height: 4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 9999;
+}
+
+.sticky .home {
+  margin-top: 5rem;
+}
