@@ -5,7 +5,7 @@ export function scrollBehaviour() {
 
   links.forEach(function (link) {
     link.addEventListener('click', e => {
-      e.preventDefault();
+      // e.preventDefault();
       const href = link.getAttribute('href');
 
       if (href === '#') {

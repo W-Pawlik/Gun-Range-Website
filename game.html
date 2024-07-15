@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <script defer src="./resources/js/game.js" type="module"></script>
+
+    <link rel="stylesheet" href="./resources/sass/style.css" />
+    <link rel="stylesheet" href="./resources/sass/game.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="logo"
+        ><img
+          src="./resources/images/header-logo.png"
+          alt="Image of logo"
+          class="logo-img"
+      /></a>
+      <nav class="nav">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
+        <i class="fa-solid fa-xmark icon-mobile-nav" name="close-outline"></i>
+      </button>
+    </header>
+    <main>
+      <div class="curr-score-cont">
+        <span class="curr-score"></span>
+      </div>
+      <div class="container flex-col-center-h-v game-area">
+        <h1 class="start-button">Start game</h1>
+        <div class="leaderboard flex-col-center-h-v">
+          <p class="game-desription">
+            W ramach rozgrzewki przed prawdziwą strzelnicą postrzelaj myszką w
+            tarcze, które będą wyświetlały się co sekundę. Masz 60 sekund na
+            zebranie jak największej ilości punktów!
+          </p>
+          <h2>Leader board</h2>
+          <span class="score">1 game: 1</span>
+          <span class="score">2 game: 10</span>
+          <span class="score">3 game: 4</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
