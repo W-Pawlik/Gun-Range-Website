@@ -35,4 +35,11 @@
 .timer {
   margin-top: 1rem;
   display: block;
+}
+
+.leader-board {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=game.css.map */

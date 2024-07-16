@@ -1,9 +1,11 @@
 'use strict';
+import { mobileNav } from './components/mobileNav.js';
 
 class Game {
   constructor() {
     this.score = 0;
-    this.time = 10;
+    this.time = 20;
+    this.scores = [];
     this.init();
   }
 
@@ -22,11 +24,11 @@ class Game {
   }
 
   startGame() {
-    this.score = 0;
-    this.time = 10;
     this.gameArea.innerHTML = '';
 
     this.currScoreCont.innerHTML = `Current score: `;
+    this.currScore.innerHTML = `${this.score}`;
+    this.currScoreCont.appendChild(this.currScore);
     this.currScoreCont.appendChild(this.timerEl);
     this.timerEl.innerHTML = `Time left: ${this.time}s`;
     this.timer();
@@ -38,8 +40,7 @@ class Game {
     const timerInterval = setInterval(() => {
       this.time--;
       this.timerEl.innerHTML = `Time left: ${this.time}s`;
-      console.log(this.time);
-      if (this.time === 0) {
+      if (this.time < 0) {
         clearInterval(timerInterval);
         this.endGame();
       }
@@ -78,14 +79,32 @@ class Game {
   endGame() {
     this.gameArea.innerHTML = `<h1 class="start-button">Start game</h1>`;
 
+    this.scores.push(this.score);
+    console.log(this.scores);
+
     alert(`Game over! Your score: ${this.score}`);
 
     this.init();
     this.currScoreCont.innerHTML = '';
     this.timerEl.innerHTML = '';
+    this.scoresEl = document.createElement('div');
+    this.scoresEl.classList.add('leader-board');
+    this.scoresEl.innerHTML = `Leader board
+    `;
+    this.showScore();
+    this.gameArea.appendChild(this.scoresEl);
+  }
+
+  showScore() {
+    this.scores.forEach((score, index) => {
+      this.scoreEl = document.createElement('p');
+      this.scoreEl.innerHTML = `Game ${index + 1}: ${score}`;
+      this.scoresEl.appendChild(this.scoreEl);
+    });
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   new Game();
+  mobileNav();
 });
