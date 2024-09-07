@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0c0c237d-57f3-4da0-8ac0-3528c896f3f9)![image](https://github.com/user-attachments/assets/96063cae-b027-43f0-930a-4ab383b176d0)# Gun-Range-Website
+# Gun-Range-Website
 
 Gun-Range-Website is a web page created for educational purposes. The project was built using the following technologies:
 - JavaScript
@@ -24,14 +24,12 @@ I developed a thematic **Target Shooting Game**. In this game, a target appears 
 ## Screenshots
 
 
-![Homepage](![image](https://github.com/user-attachments/assets/e34ca4c4-1d18-4ddf-a726-6b1c6500faf0)
-)
+
+![image](https://github.com/user-attachments/assets/0c0c237d-57f3-4da0-8ac0-3528c896f3f9)
 
 ![image](https://github.com/user-attachments/assets/f958222e-e4c2-4d20-9466-3a31ed12a097)
 
 
-![Map Section](![image](https://github.com/user-attachments/assets/14a83ad8-f479-4c4e-bbde-07f099337b5d)
-)
 
 
 
